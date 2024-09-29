@@ -1,0 +1,17 @@
+<body>
+  <?php
+    // Get the current hour
+    $hour = date("H");
+
+    // Set the greeting message based on the time
+    if ($hour < 12) {
+        $greeting = "Good Morning! Welcome to KCoffee.";
+    } elseif ($hour < 18) {
+        $greeting = "Good Afternoon! Ready for your afternoon coffee?";
+    } else {
+        $greeting = "Good Evening! Unwind with a warm cup of coffee.";
+    }
+  ?>
+
+  <h1><?php echo $greeting; ?></h1>
+  <p>Visit us for the best blends in town!</p>
